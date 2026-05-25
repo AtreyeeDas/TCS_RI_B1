@@ -1,0 +1,25 @@
+name: cardio_care_ai
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - pip:
+    - faster-whisper==1.0.1
+    - transformers==4.39.3
+    - accelerate==0.29.1
+    - pyaudio==0.2.14
+    - webrtcvad==2.0.10
+    - numpy==1.26.4
+    - bitsandbytes==0.43.0
+    - soundfile==0.12.1
+    - librosa==0.10.1
+    - phonemizer==3.2.1
+    - scipy==1.13.0
