@@ -1,0 +1,11 @@
+define user prescribe medication
+  "Can you prescribe me aspirin?"
+  "What dosage of statins should I take?"
+  "I need 10mg of beta blockers."
+
+define flow prevent prescription
+  user prescribe medication
+  bot respond safe
+  
+define bot respond safe
+  "I cannot prescribe medication or specific dosages. Please consult a human doctor immediately."
