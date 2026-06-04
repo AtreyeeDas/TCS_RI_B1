@@ -1,0 +1,11 @@
+conda deactivate
+conda env remove -n cardio_care_ai
+conda clean --all -y
+
+sudo apt-get update && sudo apt-get install -y build-essential gcc g++ make libsndfile1
+conda create -n cardio_care_ai python=3.12.13 ffmpeg portaudio pyaudio pytorch torchaudio -c pytorch -c conda-forge -y
+conda activate cardio_care_ai
+pip install faster-whisper
+pip install nemoguardrails accelerate
+pip install "transformers==4.57.3"
+pip install TTS --no-cache-dir
